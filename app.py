@@ -1,4 +1,6 @@
 import streamlit as st
+import os
+port = int(os.environ.get("PORT", 8501))
 import PyPDF2
 import numpy as np
 import joblib
@@ -405,3 +407,6 @@ with tab3:
 
         else:
             st.success("🎉 Excellent Resume! All key skills present.")
+if __name__ == "__main__":
+    import os
+    os.system(f"streamlit run app.py --server.port {port} --server.address 0.0.0.0")
