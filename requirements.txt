@@ -1,8 +1,6 @@
 streamlit
-nltk
 scikit-learn
-joblib
-pillow
-opencv-python-headless
+pandas
 numpy
-requests
+matplotlib
+PyPDF2
